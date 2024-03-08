@@ -67,14 +67,12 @@ namespace PythonNETExperiments
         {
             Runtime.PythonDLL = "/Library/Frameworks/Python.framework/Versions/3.11/lib/libpython3.11.dylib";
             
-            Console.WriteLine(Runtime.PythonDLL);
-            Console.WriteLine(PythonEngine.Platform);
-            Console.WriteLine(PythonEngine.MinSupportedVersion);
-            Console.WriteLine(PythonEngine.MaxSupportedVersion);
-            Console.WriteLine(PythonEngine.BuildInfo);
-            Console.WriteLine(PythonEngine.PythonPath);
-
-            // Console.WriteLine(task.IsCompleted);
+            // Console.WriteLine(Runtime.PythonDLL);
+            // Console.WriteLine(PythonEngine.Platform);
+            // Console.WriteLine(PythonEngine.MinSupportedVersion);
+            // Console.WriteLine(PythonEngine.MaxSupportedVersion);
+            // Console.WriteLine(PythonEngine.BuildInfo);
+            // Console.WriteLine(PythonEngine.PythonPath);
             
             PythonEngine.Initialize();
             PythonEngine.BeginAllowThreads();

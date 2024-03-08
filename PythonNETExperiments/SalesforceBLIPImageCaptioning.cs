@@ -1,4 +1,3 @@
-using System;
 using Python.Runtime;
 
 namespace PythonNETExperiments
@@ -34,7 +33,7 @@ namespace PythonNETExperiments
                 // as it is unable to find "BlipProcessor"
                 // "System.Collections.Generic.KeyNotFoundException: The module has no attribute 'BlipProcessor'"
                 // Get all functions in the module
-                dynamic functions = inspect.getmembers(transformers, inspect.isclass);
+                inspect.getmembers(transformers, inspect.isclass);
                 
                 // // Print each function name
                 // foreach (var function in functions)
@@ -49,6 +48,8 @@ namespace PythonNETExperiments
                 BLIP_FOR_CONDITIONAL_GENERATION = blipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large");
             }
 
+            public void Initialize() { }
+
             private readonly string URL;
 
             public string Caption;
@@ -56,11 +57,6 @@ namespace PythonNETExperiments
             public CaptionJob(string url)
             {
                 URL = url;
-            }
-
-            public void Initialize()
-            {
-                Console.WriteLine("hi");
             }
             
             public void Run()
@@ -87,14 +83,8 @@ def {GENERATE_WITH_UNPACKING}(model, inputs):
 
                 dynamic output = generate_with_unpacking(BLIP_FOR_CONDITIONAL_GENERATION, inputs);
                 
-                // dynamic output = BLIP_FOR_CONDITIONAL_GENERATION.generate(**inputs);
                 Caption = processor.decode(output[0], skip_special_tokens: true);
             }
-        }
-        
-        public SalesforceBLIPImageCaptioning()
-        {
-            
         }
 
         public string Run(string url)
