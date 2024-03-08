@@ -26,8 +26,13 @@ namespace PythonNETExperiments
                 
                 dynamic transformers = Py.Import("transformers");
                 
+                
                 dynamic inspect = Py.Import("inspect");
                 
+                // TODO: Find out why this is needed.
+                // It seems like transformers.BlipProcessor fails when we do not call this,
+                // as it is unable to find "BlipProcessor"
+                // "System.Collections.Generic.KeyNotFoundException: The module has no attribute 'BlipProcessor'"
                 // Get all functions in the module
                 dynamic functions = inspect.getmembers(transformers, inspect.isclass);
                 
