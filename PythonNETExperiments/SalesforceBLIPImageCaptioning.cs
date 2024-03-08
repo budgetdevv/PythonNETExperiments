@@ -15,7 +15,7 @@ namespace PythonNETExperiments
             
             private static dynamic BLIP_PROCESSOR, BLIP_FOR_CONDITIONAL_GENERATION;
 
-            public static string[] Packages => [ "numpy", "Pillow", "io", "requests", "transformers", "torch" ];
+            public static string[] Packages => [ "numpy", "Pillow", "io", "requests", "transformers" ];
 
             public static void StaticInitialize()
             {
