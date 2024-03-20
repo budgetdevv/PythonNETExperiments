@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonNETExperiments", "PythonNETExperiments\PythonNETExperiments.csproj", "{2EFEA5B0-ACA3-49E8-AF2B-D7D45EA01FC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonNETExtensions", "PythonNETExtensions\PythonNETExtensions\PythonNETExtensions.csproj", "{28A62728-2E7F-4853-B644-F04EC68F7894}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2EFEA5B0-ACA3-49E8-AF2B-D7D45EA01FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFEA5B0-ACA3-49E8-AF2B-D7D45EA01FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFEA5B0-ACA3-49E8-AF2B-D7D45EA01FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A62728-2E7F-4853-B644-F04EC68F7894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A62728-2E7F-4853-B644-F04EC68F7894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A62728-2E7F-4853-B644-F04EC68F7894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A62728-2E7F-4853-B644-F04EC68F7894}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

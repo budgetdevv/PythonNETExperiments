@@ -1,0 +1,3 @@
+[submodule "PythonNETExtensions"]
+	path = PythonNETExtensions
+	url = https://github.com/budgetdevv/PythonNETExtensions

@@ -6,13 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+      <ProjectReference Include="..\PythonNETExtensions\PythonNETExtensions\PythonNETExtensions.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="pythonnet" Version="3.1.0-preview2024-03-03" />
+      <ProjectReference Include="..\PythonNETExtensions\PythonNETExtensions\PythonNETExtensions.csproj" />
     </ItemGroup>
 
 </Project>
