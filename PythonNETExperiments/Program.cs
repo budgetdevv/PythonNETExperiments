@@ -44,10 +44,7 @@ namespace PythonNETExperiments
                 
                 var inputs = blipProcessor(rawImage, return_tensors: "pt");
             
-                var output = RawPython.Run<dynamic>(
-                $"""
-                return {(object) blipForConditionalGeneration:py}.generate(**{(object) inputs:py});
-                """);
+                var output = RawPython.Run<dynamic>($"return {blipForConditionalGeneration:py}.generate(**{inputs:py});");
                 
                 var caption = blipProcessor.decode(output[0], skip_special_tokens: true);
 
